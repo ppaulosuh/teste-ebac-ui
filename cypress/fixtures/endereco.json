@@ -1,0 +1,41 @@
+[
+    {
+        "nome": "Ana",
+        "sobrenome": "Lucia",
+        "empresa": "EBAC",
+        "endereco": "Av. Paulista",
+        "numero": "2000",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "012003000",
+        "telefone": "1199009900",
+        "email": "teste@teste.com.br"
+    },
+    {
+        "nome": "Julia",
+        "sobrenome": "Prado",
+        "empresa": "Insta",
+        "endereco": "Av. Monumental",
+        "numero": "20500",
+        "pais": "Brasil",
+        "cidade": "Cepetiba",
+        "estado": "Rio de Janeiro",
+        "cep": "98480288",
+        "telefone": "2190008800",
+        "email": "teste1@teste.com.br"
+    },
+    {
+        "nome": "Maria",
+        "sobrenome": "Trindade",
+        "empresa": "Uber",
+        "endereco": "Av. Arniqueiras",
+        "numero": "120",
+        "pais": "Brasil",
+        "cidade": "Aguas Claras",
+        "estado": "Distrito Federal",
+        "cep": "7285000",
+        "telefone": "6199009900",
+        "email": "teste2@teste.com.br"
+    }
+]
