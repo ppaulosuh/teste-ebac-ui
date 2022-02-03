@@ -16,7 +16,7 @@ describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
         cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso.')
     });
 
-    it.only('Deve fazer cadastro de faturamento com sucesso - Usando arquivo de dados', () => {
+    it('Deve fazer cadastro de faturamento com sucesso - Usando arquivo de dados', () => {
         EnderecoPage.editarEnderecoFaturamento(
             dadosEndereco[1].nome,
             dadosEndereco[1].sobrenome,
@@ -32,5 +32,23 @@ describe('Funcionalidade Endereços - Faturamento e Entrega', () => {
             )
         cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso.')
     });
-
+    it('Deve fazer cadastro de entrega com sucesso', () => {
+        EnderecoPage.editarEnderecoEntrega('Flavio', 'Corrêa', 'Correios', 'Brasil', 'Rua 32', 'Quadra 37', 'Luziania', 'Goiás', '70040901')
+        cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso.')
+        
+    });
+it.only('Deve fazer cadastro de entrega com sucesso - Usando aquivos de dados', () => {
+    EnderecoPage.editarEnderecoEntrega(
+        dadosEndereco[2].nome,
+        dadosEndereco[2].sobrenome,
+        dadosEndereco[2].empresa,
+        dadosEndereco[2].pais,
+        dadosEndereco[2].endereco,
+        dadosEndereco[2].endereco2,
+        dadosEndereco[2].cidade,
+        dadosEndereco[2].estado,
+        dadosEndereco[2].cep
+        )
+        cy.get('.woocommerce-message').should('contain', 'Endereço alterado com sucesso.')
+});
 });
