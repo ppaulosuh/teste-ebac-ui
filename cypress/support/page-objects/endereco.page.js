@@ -32,6 +32,11 @@ class EnderecoPage {
         cy.get('.button').click()
 
     }
+    editarEnderecoCheckout(){
+        cy.get('#billing_first_name').type("Paulo")
+    }
+    
+
 }
 
 export default new EnderecoPage()
